@@ -1,0 +1,13 @@
+$primary : red;
+
+%message-popup{
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+body{
+    // background-color: $primary;
+    padding: 0px;
+    @extend %message-popup; 
+}
