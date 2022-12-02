@@ -1,5 +1,6 @@
 import Logo from "../images/icons8-online-store-96.png"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 
 export default function Header(){
     const [category, setCategory] = useState([]);
@@ -17,13 +18,6 @@ export default function Header(){
 
     useEffect(() =>{
         let url = 'https://fakestoreapi.com/products/categories';
-        // fetch(url)
-        // .then((respose) => {
-        //     return respose.json();
-        // })
-        // .then((data) =>{
-        //     setCategory(data);
-        // })
         fetchData(url);
     },[]);
 
@@ -47,7 +41,7 @@ export default function Header(){
                             {
                                 category.map((data,index)=>(
                                     <li className="nav-item" key={index}>
-                                        <a href={`#${data}`} className="nav-link fw-bold text-capitalize">{data}</a>
+                                        <Link to={`/category/${data}`} className="nav-link fw-bold text-capitalize">{data}</Link>
                                     </li>
                                 ))
                             }
