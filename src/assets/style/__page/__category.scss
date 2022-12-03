@@ -1,0 +1,23 @@
+.category-page{
+    position: relative;
+    .col-wrapper{
+        
+        .card-section{
+            background-color: #DE3163;
+            border: 2px solid #89CFF0;
+            border-radius: 15px;
+            padding: 10px;
+            .categories-wrapper{
+                width: inherit;
+                .category-img{
+                    max-width: 280px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .category-header{
+        padding-top: 15px;
+        margin-bottom: 25px;
+    }
+}

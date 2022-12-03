@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routers />
+      <div className='site-wrapper'>
+        <Routers />
+      </div>
     </div>
   );
 }

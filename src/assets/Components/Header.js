@@ -1,10 +1,11 @@
 import Logo from "../images/icons8-online-store-96.png"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
+import EndPoints from "./EndPoints";
 
 export default function Header(){
     const [category, setCategory] = useState([]);
-    const [isToggle, setToggle] = useState(false);
+    const [isToggle, setToggle] = useState(true);
 
     async function fetchData(url){
         let response = await fetch(url);
@@ -23,14 +24,14 @@ export default function Header(){
 
     return(
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
                 <div className="container-fluid">
-                    <a className="navbar-brand d-flex align-items-center" href="#home">
+                    <Link className="navbar-brand d-flex align-items-center" to={EndPoints.HOME}>
                         <img alt="Logo" src={Logo} width="30" height="24" className="d-inline-block align-text-top" />
                         <span className="fw-bold">
                             Ecommerce
                         </span>
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-target="/navbarNav" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
                     onClick={toggle}
                     >
@@ -38,10 +39,13 @@ export default function Header(){
                     </button>
                     <div className={`${isToggle ? 'collapse':''} navbar-collapse justify-content-end`} id="navbarNav">
                         <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link to={`${EndPoints.CATEGORY}`} className="nav-link fw-bold text-capitalize">category</Link>
+                            </li>
                             {
                                 category.map((data,index)=>(
                                     <li className="nav-item" key={index}>
-                                        <Link to={`/category/${data}`} className="nav-link fw-bold text-capitalize">{data}</Link>
+                                        <Link to={`${EndPoints.DEFAULT}/category/${data}`} className="nav-link fw-bold text-capitalize">{data}</Link>
                                     </li>
                                 ))
                             }

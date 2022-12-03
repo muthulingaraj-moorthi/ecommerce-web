@@ -3,7 +3,10 @@
 import { Slide  } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css';
 import { useEffect,useState } from "react";
-import Logo from "../images/icons8-online-store-96.png"
+import Banner_1 from "../images/banner_1.jpg";
+import Banner_2 from "../images/banner_2.jpg";
+import Banner_3 from "../images/banner_3.jpg";
+import Banner_4 from "../images/banner_4.jpg";
 
 function Home() {
     const [category, setCategory] = useState([]);
@@ -19,52 +22,52 @@ function Home() {
         fetchData(url);
     },[]);
     const images = [
-        "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-        "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-        "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+       Banner_1, Banner_2, Banner_3, Banner_4
     ];
     return (
-      <div>
-        <h1>This is the home page</h1>
-        {/* <CarouselProvider
-            naturalSlideWidth={100}
-            naturalSlideHeight={125}
-            totalSlides={3}
-            interval={3000}
-            isPlaying={true}
-            infinite={true}
-            playDirection='forward'
-        >
-            <Slider>
-                <Slide index={0}>I am the first Slide.</Slide>
-                <Slide index={1}>I am the second Slide.</Slide>
-                <Slide index={2}>I am the third Slide.</Slide>
-            </Slider>
-        </CarouselProvider> */}
-        <Slide autoplay={true} duration={1000} infinite={true} >
-            {
-                category.map((data,index) =>
-                    <div key={index} className="each-slide-effect">
-                        <div style={{'backgroundColor':`#FF000${index}`}}>
-                            <img src={Logo} />
-                            <span>{data}</span>
-                        </div>
+        <Slide autoplay={true} duration={1000}>
+            <div className="each-slide-effect">
+                <div style={{ 'backgroundImage': `url(${images[0]})` }}>
+                <div className="content">
+                    <span className="text-capitalize">{category[0]}</span>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
                     </div>
-                )
-            }
-           
-            {/* <div className="each-slide-effect">
+                </div>
+            </div>
+            <div className="each-slide-effect">
                 <div style={{ 'backgroundImage': `url(${images[1]})` }}>
-                    <span>Slide 2</span>
+                   <div className="content">
+                        <span className="text-capitalize">{category[1]}</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                   </div>
                 </div>
             </div>
             <div className="each-slide-effect">
                 <div style={{ 'backgroundImage': `url(${images[2]})` }}>
-                    <span>Slide 3</span>
+                    <div className="content">
+                        <span className="text-capitalize">{category[2]}</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
                 </div>
-            </div> */}
+            </div>
+            <div className="each-slide-effect">
+                <div style={{ 'backgroundImage': `url(${images[3]})` }}>
+                    <div className="content">
+                        <span className="text-capitalize">{category[3]}</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </Slide>
-      </div>
+      
     );
 }
   

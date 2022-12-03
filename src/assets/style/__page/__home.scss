@@ -1,0 +1,23 @@
+.each-slide-effect > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 50px;
+  color: red;
+  text-align: center;
+}
+.each-slide-effect{
+  .content{
+    max-width: 50%;
+  }
+}
