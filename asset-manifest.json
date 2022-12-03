@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/ecommerce-web/static/css/main.dd88be95.css",
-    "main.js": "/ecommerce-web/static/js/main.8ca2db11.js",
+    "main.css": "/ecommerce-web/static/css/main.864671d6.css",
+    "main.js": "/ecommerce-web/static/js/main.6e3af1a9.js",
     "static/js/787.93e12580.chunk.js": "/ecommerce-web/static/js/787.93e12580.chunk.js",
+    "static/media/jewelery.jpg": "/ecommerce-web/static/media/jewelery.a283f25e84bb9f06eb24.jpg",
+    "static/media/women-cloth.jpg": "/ecommerce-web/static/media/women-cloth.81c3a974daa5060cdf75.jpg",
+    "static/media/mens-cloth.jpg": "/ecommerce-web/static/media/mens-cloth.7b8caa47cb929a7eddf9.jpg",
+    "static/media/electronics.jpg": "/ecommerce-web/static/media/electronics.6e776ec23e4714915b69.jpg",
+    "static/media/banner_4.jpg": "/ecommerce-web/static/media/banner_4.c7498c90f137f7c7c311.jpg",
+    "static/media/banner_3.jpg": "/ecommerce-web/static/media/banner_3.9c1f99aafb8433eaf468.jpg",
+    "static/media/banner_2.jpg": "/ecommerce-web/static/media/banner_2.6ee8227465ec91e1bc9c.jpg",
+    "static/media/banner_1.jpg": "/ecommerce-web/static/media/banner_1.22f534567c6cf3c4e467.jpg",
     "index.html": "/ecommerce-web/index.html",
-    "main.dd88be95.css.map": "/ecommerce-web/static/css/main.dd88be95.css.map",
-    "main.8ca2db11.js.map": "/ecommerce-web/static/js/main.8ca2db11.js.map",
+    "main.864671d6.css.map": "/ecommerce-web/static/css/main.864671d6.css.map",
+    "main.6e3af1a9.js.map": "/ecommerce-web/static/js/main.6e3af1a9.js.map",
     "787.93e12580.chunk.js.map": "/ecommerce-web/static/js/787.93e12580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd88be95.css",
-    "static/js/main.8ca2db11.js"
+    "static/css/main.864671d6.css",
+    "static/js/main.6e3af1a9.js"
   ]
 }
