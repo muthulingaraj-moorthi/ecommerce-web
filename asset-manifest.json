@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecommerce-web/static/css/main.864671d6.css",
-    "main.js": "/ecommerce-web/static/js/main.6e3af1a9.js",
+    "main.css": "/ecommerce-web/static/css/main.3ad5ece5.css",
+    "main.js": "/ecommerce-web/static/js/main.9bd39a9e.js",
     "static/js/787.93e12580.chunk.js": "/ecommerce-web/static/js/787.93e12580.chunk.js",
     "static/media/jewelery.jpg": "/ecommerce-web/static/media/jewelery.a283f25e84bb9f06eb24.jpg",
     "static/media/women-cloth.jpg": "/ecommerce-web/static/media/women-cloth.81c3a974daa5060cdf75.jpg",
@@ -12,12 +12,12 @@
     "static/media/banner_2.jpg": "/ecommerce-web/static/media/banner_2.6ee8227465ec91e1bc9c.jpg",
     "static/media/banner_1.jpg": "/ecommerce-web/static/media/banner_1.22f534567c6cf3c4e467.jpg",
     "index.html": "/ecommerce-web/index.html",
-    "main.864671d6.css.map": "/ecommerce-web/static/css/main.864671d6.css.map",
-    "main.6e3af1a9.js.map": "/ecommerce-web/static/js/main.6e3af1a9.js.map",
+    "main.3ad5ece5.css.map": "/ecommerce-web/static/css/main.3ad5ece5.css.map",
+    "main.9bd39a9e.js.map": "/ecommerce-web/static/js/main.9bd39a9e.js.map",
     "787.93e12580.chunk.js.map": "/ecommerce-web/static/js/787.93e12580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.864671d6.css",
-    "static/js/main.6e3af1a9.js"
+    "static/css/main.3ad5ece5.css",
+    "static/js/main.9bd39a9e.js"
   ]
 }
