@@ -6,4 +6,6 @@ export default class EndPoints{
     static CATEGORY_ELECTRONICS = "/ecommerce-web/category/electronics"
     static CATEGORY_MENS = "/ecommerce-web/category/mens"
     static CATEGORY_WOMENS = "/ecommerce-web/category/womens"
+    static PRODUCT_LIST = "/ecommerce-web/categories/";
+    static PRODUCT ="/ecommerce-web/products/"
 }

@@ -1,25 +1,27 @@
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import EndPoints from "../Components/EndPoints";
 import Electronics from "../images/electronics.jpg";
 import Jewelery from "../images/jewelery.jpg";
 import Men from "../images/mens-cloth.jpg";
 import Women from "../images/women-cloth.jpg";
 
-function Category(){
+function Category() {
     const [category, setCategory] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
         let url = 'https://fakestoreapi.com/products/categories';
         fetch(url)
-        .then((response)=>{
-            return response.json();
-        })
-        .then((data) => {
-            setCategory(data);
-            console.log(data);
-        })
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                setCategory(data);
+                console.log(data);
+            })
 
-    },[]);
+    }, []);
     const _Category_Image_ = [
-        Electronics,  Jewelery , Men, Women
+        Electronics, Jewelery, Men, Women
     ]
     const _Content_ = [
         "Apart from the best deals, amazing offers and the latest styles online, the app also gives you the flexibility to shop at your convenience.",
@@ -27,7 +29,7 @@ function Category(){
         "Buy mens clothing on sale. Select a wide range of mens tshirts, shirts and jeans online - 100% original products, Shipping in 24Hr",
         "Women's clothing online : Shop the widest collection for women at the biggest discounts. Choose from a top range of casual Cloths"
     ]
-    return(
+    return (
         <>
             <div className="category-page">
                 <div className="container">
@@ -39,15 +41,19 @@ function Category(){
                     <div className="row">
                         {
                             category.map((data, index) =>
-                                <div key={index} className="col-wrapper col-lg-3 col-md-6 col-sm-12">
+                                <div key={index} className="col-wrapper col-lg-3 col-md-6 col-sm-12 mb-2">
                                     <div className="card-section">
                                         <div className="categories-wrapper">
                                             <h6 className="text-capitalize text-white">{data}</h6>
-                                            <img className="category-img" alt="Category" src={_Category_Image_[index]} />
-                                            <p className="mt-2 text-white">
+                                            <img className="category-img w-100" alt="Category" src={_Category_Image_[index]} />
+                                            <p className="mt-2 text-white" style={{ height: "120px" }}>
                                                 {_Content_[index]}
                                             </p>
-                                            <button type="button" className="btn btn-primary text-uppercase mt-1">Shop</button>
+                                            <button type="button" className="btn btn-primary text-uppercase mt-1">
+                                                <Link className="text-decoration-none text-white" to={{
+                                                    pathname: `${EndPoints.PRODUCT_LIST}${data}`,
+                                                }} >Shop</Link>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

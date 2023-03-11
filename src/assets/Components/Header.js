@@ -40,12 +40,18 @@ export default function Header(){
                     <div className={`${isToggle ? 'collapse':''} navbar-collapse justify-content-end`} id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to={`${EndPoints.CATEGORY}`} className="nav-link fw-bold text-capitalize">category</Link>
+                                <Link to={`${EndPoints.CATEGORY}`} onClick={() =>{setToggle(!isToggle)}} className="nav-link fw-bold text-capitalize">category</Link>
                             </li>
                             {
                                 category.map((data,index)=>(
                                     <li className="nav-item" key={index}>
-                                        <Link to={`${EndPoints.DEFAULT}/category/${data}`} className="nav-link fw-bold text-capitalize">{data}</Link>
+                                        {/* <Link to={`${EndPoints.DEFAULT}/category/${data}`} category={data} className="nav-link fw-bold text-capitalize">{data}</Link> */}
+                                        <Link to={{
+                                            pathname:`${EndPoints.PRODUCT_LIST}${data}`,
+                                            category_name: data,
+                                        }} params={{name:`${data}`}} 
+                                        onClick={() =>{setToggle(!isToggle)}}
+                                        className="nav-link fw-bold text-capitalize">{data}</Link>
                                     </li>
                                 ))
                             }

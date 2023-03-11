@@ -1,0 +1,48 @@
+.product-details {
+    .content-container {
+        text-align: left;
+
+        h4 {
+            padding-left: 10px;
+            font-weight: bold;
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        .rating-assured {
+            div.logo-assured-wrapper {
+                margin-left: 20px;
+                background: blue;
+                padding: 5px;
+                border-radius: 10px;
+                color: #fff;
+                .logo-assured {
+                    width: 15px;
+                }
+
+                span {
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                font-size: 12px;
+                display: inline-flex;
+                align-items: center;
+
+                img {
+                    width: 12px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .offers{
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+}
