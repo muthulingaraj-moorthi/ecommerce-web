@@ -1,4 +1,4 @@
-.each-slide-effect > div {
+.each-slide-effect>div {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -12,12 +12,103 @@
 
 .each-slide-effect span {
   padding: 20px;
-  font-size: 50px;
+  font-size: 20px;
+  font-weight: bold;
   color: red;
   text-align: center;
+  margin-bottom: -13px !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  z-index: 1;
 }
-.each-slide-effect{
-  .content{
-    max-width: 50%;
+
+.each-slide-effect {
+  position: relative;
+
+  .content {
+    width: 100%;
+    position: absolute;
+    bottom: 0 !important;
+  }
+}
+
+.home-realated-page {
+  .related-product-wrapper {
+    .feature-product {
+      cursor: pointer;
+      transition: 0.5s;
+
+      .wrappers-ptoduct {
+        transition: 0.5s;
+        border-radius: 15px;
+
+        h6 {
+          font-size: 15px;
+          height: 75px;
+        }
+
+        img {
+          width: 200px;
+          height: 150px;
+          transition: 0.5s;
+        }
+
+        h5 {
+          font-weight: bold;
+          background-color: bisque;
+        }
+
+        .rating-assured {
+          div.logo-assured-wrapper {
+            margin-left: 20px;
+            background: blue;
+            padding: 5px;
+            border-radius: 10px;
+            color: #fff;
+
+            .logo-assured {
+              width: 15px;
+              height: auto !important;
+            }
+
+            span {
+              font-size: 10px;
+              font-weight: bold;
+            }
+          }
+
+          h4 {
+            padding-left: 10px;
+            font-weight: bold;
+
+            span {
+              font-size: 12px;
+            }
+          }
+
+          button {
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+
+            img {
+              width: 12px;
+              margin-left: 5px;
+              height: auto !important;
+            }
+          }
+        }
+
+        // &:hover .product-img{
+        //     transform: scale(1.1);
+        // }
+      }
+
+      &:hover .wrappers-ptoduct {
+        transform: scale(0.9);
+        box-shadow: 0px 0px 13px 0px rgba(13, 110, 243, 1)
+      }
+    }
   }
 }

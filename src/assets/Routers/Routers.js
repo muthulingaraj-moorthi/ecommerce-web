@@ -14,6 +14,13 @@ function Routers(props){
                 <Route path={EndPoints.CATEGORY} element ={<Category />} />
                 <Route path={`${EndPoints.PRODUCT_LIST}:product`} element = { <Productlist /> } />
                 <Route path={`${EndPoints.PRODUCT}:id`} element = { <Product /> } />
+
+              
+                <Route path={EndPoints.LIVE_DEFAULT} element={<Home />} />
+                <Route path={EndPoints.LIVE_HOME} element={<Home />} />
+                <Route path={EndPoints.LIVE_CATEGORY} element ={<Category />} />
+                <Route path={`${EndPoints.LIVE_PRODUCT_LIST}:product`} element = { <Productlist /> } />
+                <Route path={`${EndPoints.LIVE_PRODUCT}:id`} element = { <Product /> } />
             </Routes>
         </div>
     )

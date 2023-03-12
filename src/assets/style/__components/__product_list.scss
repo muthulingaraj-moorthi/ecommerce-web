@@ -1,12 +1,13 @@
 .heaeding{
     text-align: left !important;
+    font-weight: bold;
 }
 .product_card_wrapper{
     .wrapper_card{
         .product-card-href{
             transition: 0.5s;
             .card{
-                border-color: red;
+                border-color: rgb(16, 138, 225);
                 .product_name{
                     font-weight: bold;
                     height: 100px;
@@ -19,6 +20,7 @@
             }
             &:hover .product-img{
                 transform: scale(1.1);
+                // transform: rotateY(260deg);
             }
         }
        

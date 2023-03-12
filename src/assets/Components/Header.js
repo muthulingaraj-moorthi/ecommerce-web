@@ -16,7 +16,7 @@ export default function Header(){
     function toggle(event){
         setToggle(!isToggle)
     }
-
+    
     useEffect(() =>{
         let url = 'https://fakestoreapi.com/products/categories';
         fetchData(url);

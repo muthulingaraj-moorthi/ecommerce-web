@@ -11,7 +11,7 @@ function Productlist(props) {
     async function getProduct(url) {
         let response = await fetch(`https://fakestoreapi.com/products/category/${url}`);
         let data = await response.json();
-        setproductCard(data)
+        setproductCard(data);
     }
 
     //get Params in react
@@ -25,7 +25,7 @@ function Productlist(props) {
     return (
         <>
             <section className="container-fluid">
-                <p className="heaeding text-left pt-2 pb-4 mb-0"><b>Category:</b> <span className="text-capitalize">{categories}</span></p>
+                <p className="heaeding text-left pt-2 pb-4 mb-0"><b>Category:</b> <span className=" text-capitalize text-primary">{categories}</span></p>
                 <div className="row">
                     {
                         product_card.map((data, index) => (

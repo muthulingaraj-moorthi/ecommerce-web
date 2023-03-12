@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Star from "../images/star.png";
 import Logo from "../images/icons8-online-store-48.png"
 import Offers from "../Components/Offers";
+import RelatedProduct from "../Components/RealatedProduct";
 
 function Product() {
 
@@ -22,13 +23,14 @@ function Product() {
 
     //call Product API
     useEffect(() => {
+        window.scrollTo(0, 0);
         let url = `https://fakestoreapi.com/products/${id}`;
         getProductDate(url)
     }, [id])
     return (
         <>
             <section className="product-details container-fluid">
-                <p className="heaeding text-left pt-2 pb-4 mb-0"><b>Product:</b> <span className="text-capitalize">{product.title}</span></p>
+                <p className="heaeding text-left pt-2 pb-4 mb-0"><b>Product:</b> <span className="text-capitalize text-primary">{product.title}</span></p>
                 <div className="row">
                     <div className="image-container col-lg-5 col-sm-12 position-relative">
                         <div className="position-relative w-100 p-5 pb-2 mb-2">
@@ -66,6 +68,11 @@ function Product() {
                                 <Offers />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="related-product">
+                    <div className="wrapper">
+                        <RelatedProduct category={product.category} current_id={product.id} />
                     </div>
                 </div>
             </section>
