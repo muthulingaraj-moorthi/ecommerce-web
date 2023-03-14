@@ -26,7 +26,7 @@ export default function Header(){
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
                 <div className="container-fluid">
-                    <Link className="navbar-brand d-flex align-items-center" to={EndPoints.HOME}>
+                    <Link className="navbar-brand d-flex align-items-center" to={EndPoints.HOME} onClick={()=>{setToggle(!isToggle)}}>
                         <img alt="Logo" src={Logo} width="30" height="24" className="d-inline-block align-text-top" />
                         <span className="fw-bold">
                             Ecommerce
