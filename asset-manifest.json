@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ecommerce-web/static/css/main.3ad5ece5.css",
-    "main.js": "/ecommerce-web/static/js/main.9bd39a9e.js",
+    "main.css": "/ecommerce-web/static/css/main.6d86a853.css",
+    "main.js": "/ecommerce-web/static/js/main.34e82810.js",
     "static/js/787.93e12580.chunk.js": "/ecommerce-web/static/js/787.93e12580.chunk.js",
     "static/media/jewelery.jpg": "/ecommerce-web/static/media/jewelery.a283f25e84bb9f06eb24.jpg",
+    "static/media/banner_2.jpg": "/ecommerce-web/static/media/banner_2.ff45c4c05cad3d3ba69d.jpg",
     "static/media/women-cloth.jpg": "/ecommerce-web/static/media/women-cloth.81c3a974daa5060cdf75.jpg",
     "static/media/mens-cloth.jpg": "/ecommerce-web/static/media/mens-cloth.7b8caa47cb929a7eddf9.jpg",
     "static/media/electronics.jpg": "/ecommerce-web/static/media/electronics.6e776ec23e4714915b69.jpg",
+    "static/media/banner_1.jpg": "/ecommerce-web/static/media/banner_1.ad1a83bb2e12a8aa03cc.jpg",
+    "static/media/banner_3.jpg": "/ecommerce-web/static/media/banner_3.efbb0c6aae10ce3a8ce4.jpg",
     "static/media/banner_4.jpg": "/ecommerce-web/static/media/banner_4.c7498c90f137f7c7c311.jpg",
-    "static/media/banner_3.jpg": "/ecommerce-web/static/media/banner_3.9c1f99aafb8433eaf468.jpg",
-    "static/media/banner_2.jpg": "/ecommerce-web/static/media/banner_2.6ee8227465ec91e1bc9c.jpg",
-    "static/media/banner_1.jpg": "/ecommerce-web/static/media/banner_1.22f534567c6cf3c4e467.jpg",
     "index.html": "/ecommerce-web/index.html",
-    "main.3ad5ece5.css.map": "/ecommerce-web/static/css/main.3ad5ece5.css.map",
-    "main.9bd39a9e.js.map": "/ecommerce-web/static/js/main.9bd39a9e.js.map",
+    "main.6d86a853.css.map": "/ecommerce-web/static/css/main.6d86a853.css.map",
+    "main.34e82810.js.map": "/ecommerce-web/static/js/main.34e82810.js.map",
     "787.93e12580.chunk.js.map": "/ecommerce-web/static/js/787.93e12580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ad5ece5.css",
-    "static/js/main.9bd39a9e.js"
+    "static/css/main.6d86a853.css",
+    "static/js/main.34e82810.js"
   ]
 }
